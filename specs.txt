@@ -22,18 +22,15 @@ The program removes a consonant from the beginning of a word beginning with cons
 Example Input: school
 Example Output: chool
 xxxxxx
-The program attaches a consonant to the end of a word that has had its first consonant removed.
-Example Input: school
-Example Output: chools
 
 The program removes multiple consonants from the beginning of a word beginning with consonants.
 Example Input: school
 Example Output: oolay
-
+xxxxx
 The program attaches multiple consonants to the end of a word that has had its consonants removed.
 Example Input: school
 Example Output: oolschay
-
+xxxxxx
 The program detects if a q is followed by u.
 Example Input: squelch
 Example Output: true

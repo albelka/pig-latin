@@ -28,9 +28,6 @@ Example Output: in console: s, c, h_
 * _The program removes a consonant from the beginning of a word beginning with consonants.
 Example Input: school
 Example Output: chool_
-* _The program attaches a consonant to the end of a word that has had its first consonant removed.
-Example Input: school
-Example Output: chools_
 * _The program removes multiple consonants from the beginning of a word beginning with consonants.
 Example Input: school
 Example Output: oolay_
