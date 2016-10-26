@@ -31,15 +31,16 @@ function translator (word) {
     return word;
   }
 };
-//
+// This will take the input, split it into an array, check for punctuation, apply translator as appropriate, then push each translated word to a new array for display to the user.
 function processSentence (sentence){
-  var arrayOfWords = sentence.split(" ");
-  var arrayOfPigs = [];
+  var arrayOfWords = sentence.split(" ");   // Turns the sentence(which is a string) into an array by splitting it at every space.
+  var arrayOfPigs = [];   // An empty array that we will push the translated words into.
+  // This forEach loop will run through each word in arrayOfWords to check for punctuation. The else statement inside it (no punctuation) just applies translator and pushes the translated word to arrayOfPigs.
   arrayOfWords.forEach(function(word){
     console.log("Enters forEach " + word);
-    if(word.search(/\W/) > -1){
+    if(word.search(/\W/) > -1){   // checks if there is ANY punctuation in the word
       console.log("enters forEach -> if " + word);
-      // for punctuation in front of word
+      // for punctuation in front of the word; runs through each punctuation character and saves it in the punctuationFront variable, then removes it.
       var punctuationFront = "";
       for (var i = 0; i < word.search(/\w/); i++){
         if (/\W/g.test(word[i])){
@@ -50,7 +51,7 @@ function processSentence (sentence){
         }
       }
       console.log("after punctuationFront: " + word + "," + punctuationFront);
-      // for punctuation behind word
+      // for punctuation behind the word; same as punctuationFront but it runs through punctuation starting from the last character and moves toward the front.
       var punctuationEnd = "";
       for (var i = word.length-1; i > 0; i--){
         if (/\w/.test(word[i])) {
@@ -61,6 +62,7 @@ function processSentence (sentence){
         }
       }
       console.log("after punctuationEnd: " + word + "," + punctuationEnd);
+      // Translates the word (stripped of its punctuation), then re-adds the punctuation to their original locations, in their original orders (saved in punctuationFront and punctuationEnd), then pushes the result to arrayOfPigs.
       word = translator(word);
       word = punctuationFront + word + punctuationEnd;
       arrayOfPigs.push(word);
@@ -72,7 +74,7 @@ function processSentence (sentence){
       console.log("translated: " + word);
     }
   });
-  return arrayOfPigs.join(" ");
+  return arrayOfPigs.join(" ");   // Turns arrayOfPigs into a string with each word separated by spaces, for display to the user.
 }
 
 // UI logic under this line
