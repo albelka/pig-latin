@@ -1,35 +1,33 @@
-function translator (sentence) {
-  if(sentence.search(/[^aeiou]/i) === 0) {
-    var letter;
-    console.log("enter conditional");
-    for(var i=0; i < (sentence.search(/[aeiou]/i)); i++){
-      console.log(sentence.search(/[aeiou]/i))
-        if(sentence[i+1] === "y"){
-          sentence = sentence.concat(sentence[0]);
-          sentence = sentence.replace(sentence[0], "");
+function translator (word) {
+  if(word.search(/[^aeiou]/i) === 0 && word.search(/[a-z]/i) === 0) {
+    console.log("enter first if");
+    for(var i=0; i < (word.search(/[aeiou]/i)); i++){
+      console.log(word.search(/[aeiou]/i))
+        if(word[i+1] === "y"){
+          word = word.concat(word[0]);
+          word = word.replace(word[0], "");
 
-          i = sentence.search(/[aeiou]/i);
-        } else if(sentence[i] === "q"){
-          sentence = sentence.concat(sentence[0]);
-          sentence = sentence.replace(sentence[0], "");
+          i = word.search(/[aeiou]/i);
+        } else if(word[i] === "q"){
+          word = word.concat(word[0]);
+          word = word.replace(word[0], "");
 
-          if(sentence[i] === "u"){
-            sentence = sentence.concat(sentence[0]);
-            sentence = sentence.replace(sentence[0], "");
+          if(word[i] === "u"){
+            word = word.concat(word[0]);
+            word = word.replace(word[0], "");
             i--;
           }
         } else {
-          sentence = sentence.concat(sentence[0]);
-          sentence = sentence.replace(sentence[0], "");
+          word = word.concat(word[0]);
+          word = word.replace(word[0], "");
           i--;
         }
     };
-
-    return sentence + "ay";
-  } else if (sentence) {
-    return sentence + "ay";
+    return word + "ay";
+  } else if (word.search(/[aeiou]/i) === 0) {
+    return word + "ay";
   } else {
-    return sentence;
+    return word;
   }
 };
 

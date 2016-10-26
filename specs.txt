@@ -42,5 +42,5 @@ xxxxxxx
 The program detects if a word contains a y after the first letter it treats it as a vowel.
 Example Input: system
 Example Output: ystemsay
-
+xxxxxxx
 Sentence stuff and punctuation stuff
