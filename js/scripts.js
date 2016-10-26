@@ -1,4 +1,6 @@
-
+function translator (sentence) {
+  return sentence;
+}
 
 // UI logic under this line
 
