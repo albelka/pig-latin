@@ -24,7 +24,7 @@ Example Input: cow
 Example Output: true_
 * _The program detects if a word begins with multiple consonants.
 Example Input: school
-Example Output: true_
+Example Output: in console: s, c, h_
 * _The program removes a consonant from the beginning of a word beginning with consonants.
 Example Input: school
 Example Output: chool_

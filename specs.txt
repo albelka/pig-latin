@@ -16,8 +16,8 @@ Example Output: true
 xxxxx
 The program detects if a word begins with multiple consonants.
 Example Input: school
-Example Output: true
-
+Example Output: in console: s, c, h
+xxxxx
 The program removes a consonant from the beginning of a word beginning with consonants.
 Example Input: school
 Example Output: chool
@@ -49,3 +49,5 @@ Example Output: elchsquay
 The program detects if a word contains a y after the first letter it treats it as a vowel.
 Example Input: system
 Example Output: ystemsay
+
+Sentence stuff and punctuation stuff
