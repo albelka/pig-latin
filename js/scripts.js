@@ -58,8 +58,6 @@ function processSentence (sentence){
         } else if (/\W/.test(word[i])){
         punctuationEnd = word.slice(i,i+1) + punctuationEnd;
         word = word.replace(word[i], "");
-
-
         }
       }
       console.log("after punctuationEnd: " + word + "," + punctuationEnd);
@@ -73,7 +71,6 @@ function processSentence (sentence){
       arrayOfPigs.push(word);
       console.log("translated: " + word);
     }
-
   });
   return arrayOfPigs.join(" ");
 }
