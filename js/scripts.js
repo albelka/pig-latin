@@ -1,6 +1,10 @@
 function translator (sentence) {
-  return sentence;
-}
+  if (sentence) {
+    return sentence + "ay";
+  } else {
+    return sentence;
+  }
+};
 
 // UI logic under this line
 

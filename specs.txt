@@ -5,7 +5,7 @@ xxxxxxxx
 The program adds "ay" to single-letter words beginning with a vowel.
 Example Input: i
 Example Output: iay
-
+xxxxxxxx
 The program adds "ay" to multiple-letter words beginning with a vowel.
 Example Input: all
 Example Output: allay
