@@ -9,11 +9,11 @@ xxxxxxxx
 The program adds "ay" to multiple-letter words beginning with a vowel.
 Example Input: all
 Example Output: allay
-
+xxxxx
 The program detects if a word begins with a consonant.
 Example Input: cow
 Example Output: true
-
+xxxxx
 The program detects if a word begins with multiple consonants.
 Example Input: school
 Example Output: true

@@ -1,5 +1,7 @@
 function translator (sentence) {
-  if (sentence) {
+  if(sentence.search(/[^aeiou]/i) === 0) {
+    return true;
+  } else if (sentence) {
     return sentence + "ay";
   } else {
     return sentence;
