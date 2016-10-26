@@ -4,9 +4,20 @@ function translator (sentence) {
     console.log("enter conditional");
     for(var i=0; i < (sentence.search(/[aeiou]/i)); i++){
       console.log(sentence.search(/[aeiou]/i))
-      sentence = sentence.concat(sentence[0]);
-      sentence = sentence.replace(sentence[0], "");
-      i--;
+        if(sentence[i] === "q"){
+          sentence = sentence.concat(sentence[0]);
+          sentence = sentence.replace(sentence[0], "");
+
+          if(sentence[i] === "u"){
+          sentence = sentence.concat(sentence[0]);
+          sentence = sentence.replace(sentence[0], "");
+          i--;
+          }
+        } else {
+          sentence = sentence.concat(sentence[0]);
+          sentence = sentence.replace(sentence[0], "");
+          i--;
+        }
     };
 
     return sentence + "ay";

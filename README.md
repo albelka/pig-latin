@@ -34,12 +34,6 @@ Example Output: oolay_
 * _The program attaches multiple consonants to the end of a word that has had its consonants removed.
 Example Input: school
 Example Output: oolschay_
-* _The program detects if a q is followed by u.
-Example Input: squelch
-Example Output: true_
-* _The program removes all consonants before the u and the u itself.
-Example Input: squelch
-Example Output: elchay_
 * _The program attaches all consonants before the u and the u itself to the end of a word that has had its consonants removed.
 Example Input: squelch
 Example Output: elchsquay_

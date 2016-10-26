@@ -34,15 +34,11 @@ xxxxxx
 The program detects if a q is followed by u.
 Example Input: squelch
 Example Output: true
-
-The program removes all consonants before the u and the u itself.
-Example Input: squelch
-Example Output: elchay
-
+xxxxxx
 The program attaches all consonants before the u and the u itself to the end of a word that has had its consonants removed.
 Example Input: squelch
 Example Output: elchsquay
-
+xxxxxxx
 The program detects if a word contains a y after the first letter it treats it as a vowel.
 Example Input: system
 Example Output: ystemsay
