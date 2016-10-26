@@ -21,7 +21,7 @@ xxxxx
 The program removes a consonant from the beginning of a word beginning with consonants.
 Example Input: school
 Example Output: chool
-
+xxxxxx
 The program attaches a consonant to the end of a word that has had its first consonant removed.
 Example Input: school
 Example Output: chools

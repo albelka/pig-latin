@@ -1,9 +1,13 @@
 function translator (sentence) {
   if(sentence.search(/[^aeiou]/i) === 0) {
+    var letter;
     console.log("enter conditional");
     for(var i=0; i < (sentence.search(/[aeiou]/i)); i++){
-      console.log(sentence[i]);
+      console.log(sentence.search(/[aeiou]/i))
+      sentence = sentence.replace(sentence[0], "");
+      i--;
     };
+    return sentence;
   } else if (sentence) {
     return sentence + "ay";
   } else {
